@@ -1,0 +1,3 @@
+displayName = TheAngelurd's Mod
+author = TheAngelLurd
+version = 0.1
