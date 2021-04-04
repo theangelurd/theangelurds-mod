@@ -6,6 +6,7 @@ using Terraria.ID;
                     namespace theangelurdsmod
                     }
                     public class FireDevourer : ModNPC  
+                    { 
                     public override void SetStaticDefaults()
                     {
             DisplayName.SetDefault("Fire Devourer");
