@@ -30,4 +30,13 @@ using Terraria.ID;
             Item.NewItem(npc.Center, mod.ItemType("FireEssence"); //I'm not sure if this is correct, i hope this works.
             }
         }
+        public override void HitEffect(int hitDirection, double damage)
+        {
+          if (npc.life <= 0)
+            {
+            Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/FireDevourerGore1"), 1f);
+            Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/FireDevourerGore2"), 1f);
+            Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/FireDevourerGore3"), 1f);
+            }
+        }
 }
