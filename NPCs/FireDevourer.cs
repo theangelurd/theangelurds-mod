@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 
                     namespace theangelurdsmod
-                    }
+                    {
                     public class FireDevourer : ModNPC  
                     { 
                     public override void SetStaticDefaults()
@@ -15,7 +15,6 @@ using Terraria.ID;
         public override void SetDefaults()
         {
            npc.CloneDefaults(NPCID.EaterofSouls);
-            animationType = -1;
            npc.maxLife = 28;
            npc.damage = 13;
            npc.defense = 5;
