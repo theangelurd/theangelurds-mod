@@ -1,31 +1,31 @@
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace theangelurdsmod.Items
+namespace theangelurdsmod
 {
-	public class FireEssence : ModItem
-	{
-		public override void SetStaticDefaults() 
-		{
-			DisplayName.SetDefault("Fire Essence"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("The pure essence of fire creatures.");
-		}
+    public class FireEssence : ModItem
+    {
+        public override void SetStaticDefaults()
+        {
+            Tooltip.SetDefault("The essence of pure fire.");
+            DisplayName.SetDefault("Fire Essence");
+        }
 
-		public override void SetDefaults() 
-		{
-			item.width = 22;
-			item.height = 22;
-			item.value = 10000;
-			item.rare = 2;
-			ItemID.Sets.ItemNoGravity[item.type] = true;
-		}
+        public override void SetDefaults()
+        {
+            item.width = 22;
+            item.height = 22;
+            item.maxStack = 999;
+            item.value = 190;
+            item.rare = 1;
+            ItemID.Sets.ItemNoGravity[item.type] = true;
+            // Set other item.X values here
+        }
 
-		public override void AddRecipes() 
-		{
-			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
-	}
+        public override void AddRecipes()
+        {
+            // Recipes here. See Basic Recipe Guide
+        }
+    }
 }
