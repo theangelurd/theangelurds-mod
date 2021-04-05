@@ -15,7 +15,7 @@ using Terraria.ID;
         public override void SetDefaults()
         {
            npc.CloneDefaults(NPCID.EaterofSouls);
-           npc.maxLife = 28;
+           npc.lifeMax = 28;
            npc.damage = 13;
            npc.defense = 5;
            npc.value = Item.buyPrice(0, 0, 0, 40);
@@ -39,4 +39,5 @@ using Terraria.ID;
             Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/FireDevourerGore3"), 1f);
             }
         }
+    }
 }
