@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace theangelurdsmod
+namespace theangelurdsmod.Items
 {
     public class FireEssence : ModItem
     {
