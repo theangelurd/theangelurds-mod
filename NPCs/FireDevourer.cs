@@ -16,9 +16,9 @@ using Terraria.ID;
         {
            npc.CloneDefaults(NPCID.EaterofSouls);
             animationType = -1;
-           npc.maxLife = 28
-           npc.damage = 13
-           npc.defense = 5
+           npc.maxLife = 28;
+           npc.damage = 13;
+           npc.defense = 5;
            npc.value = Item.buyPrice(0, 0, 0, 40);
         }
         public override void OnHitPlayer(Player target, int damage, bool crit)
@@ -28,7 +28,7 @@ using Terraria.ID;
         public override void NPCLoot()
         {
             if (Main.rand.Next(0,4) == 4) {
-            Item.NewItem(npc.Center, ModContent.ItemType("FireEssence"); //I'm not sure if this is correct, i hope this works.
+            Item.NewItem(npc.Center, mod.ItemType("FireEssence"); //I'm not sure if this is correct, i hope this works.
             }
         }
 }
