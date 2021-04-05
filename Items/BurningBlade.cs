@@ -32,7 +32,7 @@ namespace theangelurdsmod.Items
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.IronBroadsword, 1);
 			recipe.AddIngredient(ItemID.FireEssence, 2);
-			recipe.AddTile(TileID.Anvil);
+			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
