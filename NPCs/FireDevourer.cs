@@ -28,7 +28,7 @@ using Terraria.ID;
         public override void NPCLoot()
         {
             if (Main.rand.Next(0,4) == 4) {
-            Item.NewItem(npc.Center, ItemID.FireEssence);
+            Item.NewItem(npc.Center, ModContent.ItemType.FireEssence); //I'm not sure if this is correct, i hope this works.
             }
         }
 }
