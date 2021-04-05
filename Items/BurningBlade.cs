@@ -17,7 +17,7 @@ namespace theangelurdsmod.Items
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 20;
+			item.useTime = 18;
 			item.useAnimation = 20;
 			item.useStyle = 1;
 			item.knockBack = 6;
@@ -31,10 +31,14 @@ namespace theangelurdsmod.Items
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.IronBroadsword, 1);
-			recipe.AddIngredient(mod.ItemType("FireEssence"), 2);
+			recipe.AddIngredient(mod.ItemType("FireEssence"), 7);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
+		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        {
+            target.AddBuff(BuffID.OnFire, 200);
+        }
 	}
 }
