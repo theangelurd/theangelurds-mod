@@ -15,8 +15,8 @@ namespace theangelurdsmod.Items
 		{
 			item.damage = 168;
 			item.melee = true;
-			item.width = 96;
-			item.height = 96;
+			item.width = 108;
+			item.height = 108;
 			item.useTime = 16;
 			item.useAnimation = 20;
 			item.useStyle = 1;
