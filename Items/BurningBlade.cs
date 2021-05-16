@@ -36,9 +36,5 @@ namespace theangelurdsmod.Items
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
-		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
-        {
-            target.AddBuff(BuffID.OnFire, 200);
-        }
 	}
 }

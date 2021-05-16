@@ -13,7 +13,7 @@ namespace theangelurdsmod.Items
 
 		public override void SetDefaults() 
 		{
-			item.damage = 21;
+			item.damage = 18;
 			item.melee = true;
 			item.width = 34;
 			item.height = 34;

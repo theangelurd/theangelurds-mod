@@ -4,22 +4,21 @@ using Terraria.ModLoader;
 
 namespace theangelurdsmod.Items
 {
-    public class FireEssence : ModItem
+    public class RustedMetal : ModItem
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("The essence of pure fire.");
-            DisplayName.SetDefault("Fire Essence");
+            Tooltip.SetDefault("Piece of metal rusted by the rain and old age.");
+            DisplayName.SetDefault("Rusted Metal");
         }
 
         public override void SetDefaults()
         {
-            item.width = 22;
-            item.height = 22;
-            item.maxStack = 99;
-            item.value = 190;
+            item.width = 14;
+            item.height = 14;
+            item.maxStack = 999;
+            item.value = 120;
             item.rare = 1;
-            ItemID.Sets.ItemNoGravity[item.type] = true;
             // Set other item.X values here
         }
 

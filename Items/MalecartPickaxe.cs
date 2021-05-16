@@ -3,26 +3,27 @@ using Terraria.ModLoader;
 
 namespace theangelurdsmod.Items
 {
-	public class LunarGreatsword : ModItem
+	public class MalecartPickaxe : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Lunar Greatsword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("A massive sword made out of pure lunar bars.");
+			DisplayName.SetDefault("Malecart Pickaxe"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			Tooltip.SetDefault("Can mine Sefarium Ore.");
 		}
 
 		public override void SetDefaults()
 		{
-			item.damage = 168;
+			item.damage = 78;
 			item.melee = true;
 			item.width = 96;
-			item.height = 96;
-			item.useTime = 16;
+			item.height = 88;
+			item.useTime = 7;
 			item.useAnimation = 20;
 			item.useStyle = 1;
-			item.knockBack = 8;
-			item.value = 998700;
-			item.rare = 10;
+			item.knockBack = 7.45f;
+			item.value = 2437900;
+			item.pick = 235;
+			item.rare = 12;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}
@@ -30,7 +31,7 @@ namespace theangelurdsmod.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("LunarBar"), 18);
+			recipe.AddIngredient(mod.ItemType("TaintedRock"), 43);
 			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
